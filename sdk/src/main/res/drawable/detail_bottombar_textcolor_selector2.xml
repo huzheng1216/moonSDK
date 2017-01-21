@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/detail_bottombar_textcolor_select" android:state_enabled="false" />
+    <item android:color="@color/detail_bottombar_textcolor_select" android:state_checked="true"/>
+    <item android:color="@color/detail_bottombar_textcolor_press2" android:state_pressed="true"/>
+    <item android:color="@color/detail_bottombar_textcolor_norma2"/>
+</selector>

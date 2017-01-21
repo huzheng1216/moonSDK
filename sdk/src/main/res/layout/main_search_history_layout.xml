@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_left_menu_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00fafafa"
+    android:clickable="false"
+    android:orientation="vertical"
+    >
+
+    <com.flyersoft.sdk.widget.main.other.MaxHeightLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ListView
+            android:id="@+id/search_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+    </com.flyersoft.sdk.widget.main.other.MaxHeightLinearLayout>
+
+    <Button
+        android:id="@+id/search_clean_bt"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:text="@string/search_clean_history"/>
+
+
+</LinearLayout>

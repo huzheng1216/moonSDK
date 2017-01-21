@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bule">#1E88E5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E5E5E5</color>
+    <color name="main_bottombar_textcolor_normal">#000000</color>
+    <color name="main_bottombar_textcolor_press">#1E88E5</color>
+    <color name="main_bottombar_itembg_press">#FFFFFF</color>
+    <color name="main_bottombar_itembg_normal">#FFFFFF</color>
+    <color name="main_recycleview_dividerline">#E5E5E5</color>
+    <color name="detail_bottombar_textcolor_normal">#FFFFFF</color>
+    <color name="detail_bottombar_textcolor_norma2">#1E88E5</color>
+    <color name="detail_bottombar_textcolor_press">#62ACED</color>
+    <color name="detail_bottombar_textcolor_press2">#BBDBF7</color>
+    <color name="detail_bottombar_textcolor_select">#999999</color>
+    <color name="landing_buttom_zfb_normal">#3399FF</color>
+    <color name="landing_buttom_zfb_press">#1E88E5</color>
+    <color name="landing_buttom_wx_normal">#57D982</color>
+    <color name="landing_buttom_wx_press">#1FCC58</color>
+</resources>

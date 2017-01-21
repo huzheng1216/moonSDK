@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:minHeight="59dp"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/buy_group_item_indicator"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_list_shrink"/>
+
+    <TextView
+        android:id="@+id/buy_group_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buy_group_item_indicator"
+        android:text="XXXXXXXX"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"/>
+
+    <CheckBox
+        android:id="@+id/buy_group_item_checkbox"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:padding="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">静读天下</string>
+    <string name="no_data">获取数据失败，请重试。。。</string>
+    <string name="net_error">网络异常！</string>
+
+
+    <!-- 一级页 -->
+    <string name="recommend">推荐</string>
+    <string name="free">免费</string>
+    <string name="topreview">排行</string>
+    <string name="classify">分类</string>
+    <string name="more">更多</string>
+    <string name="read_recommend">畅读|小编力荐</string>
+    <string name="hot_books">瞩目|热门图书</string>
+    <string name="favorable_books">优惠|低价精选</string>
+    <string name="string_is_empty">内容不能为空！</string>
+    <string name="search_prompt">请输入书名或者作者名</string>
+    <string name="user_default_name">游客</string>
+    <string name="user_book_store">我的书架</string>
+    <string name="user_account">我的账户</string>
+    <string name="search_clean_history">清空</string>
+
+    <!-- 二级页 -->
+    <string name="detail_header_title">书籍详情</string>
+    <string name="detail_view_catalog">查看目录</string>
+    <string name="detail_content_recomment_change">换一换</string>
+    <string name="detail_read_recommend">相关阅读</string>
+    <string name="detail_buy">购买阅读</string>
+    <string name="detail_free">免费试读</string>
+    <string name="detail_add">加入书架</string>
+
+
+    <!-- 目录页 -->
+    <string name="catalog_top_title">目录</string>
+
+
+    <!-- 分类列表 -->
+    <string name="category_loading">正在加载....</string>
+
+    <!-- 登陆界面 -->
+    <string name="landing_title">账号登陆</string>
+    <string name="landing_name">静读天下</string>
+    <string name="landing_zfb">支付宝登陆</string>
+    <string name="landing_wx">微信登陆</string>
+
+    <!-- 账户界面 -->
+    <string name="userinfo_title">我的账户</string>
+    <string name="userinfo_recharge_history_title">充值记录</string>
+    <string name="balance">余额：</string>
+    <string name="mr_currency">书币</string>
+    <string name="recharge">充值</string>
+    <string name="my_purchase">我的购买</string>
+    <string name="my_recharge">充值记录</string>
+    <string name="currency_recharge">书币充值</string>
+    <string name="currency_100">100书币</string>
+    <string name="currency_1000">1000书币</string>
+    <string name="currency_2000">2000书币</string>
+    <string name="currency_5000">5000书币</string>
+    <string name="currency_10000">10000书币</string>
+    <string name="currency_r1">￥1</string>
+    <string name="currency_r10">￥10</string>
+    <string name="currency_r20">￥20</string>
+    <string name="currency_r50">￥50</string>
+    <string name="currency_r100">￥100</string>
+    <string name="recharge_type">请选择支付方式：</string>
+    <string name="recharge_type_wx">微信支付</string>
+    <string name="recharge_type_zfb">支付宝支付</string>
+
+    <!-- 我的书架界面 -->
+    <string name="userbooks_title">我的书架</string>
+
+    <!-- 购买书籍界面 -->
+    <string name="buy_books_title">购买书籍</string>
+    <string name="buy_books_chose">已选：</string>
+    <string name="buy_books_chose_all">全选</string>
+    <string name="buy_books_chose_none">全不选</string>
+    <string name="buy_books_section">章节</string>
+    <string name="buy_books_price">价格：</string>
+    <string name="buy_books_affirm">确认购买</string>
+    <string name="buy_books_not_sufficient_funds">余额不足，充值购买</string>
+
+
+    <!-- 正文界面 -->
+    <string name="read_buy_checkbox_tx">以后不再提醒我，自动购买下一章节</string>
+    <string name="read_buy_current">购买本章</string>
+    <string name="read_buy_not_sufficient_funds">余额不足，充值并购买</string>
+
+</resources>

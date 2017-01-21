@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyersoft.sdk.widget.main.autoscroll.AutoScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/autoscrolllayout"
+    android:layout_width="match_parent"
+    android:layout_height="178dp"
+    android:layout_gravity="bottom">
+
+    <com.flyersoft.sdk.widget.main.autoscroll.AutoScrollViewPager
+        android:id="@+id/main_recomment_activitys_autoscrollviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_marginTop="8.7dp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_page_select_point"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+
+</com.flyersoft.sdk.widget.main.autoscroll.AutoScrollLayout>

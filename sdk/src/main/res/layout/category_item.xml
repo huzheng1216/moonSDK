@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:minHeight="130dp"
+    android:background="#ffffff"
+    android:padding="16.5dp"
+    android:gravity="center_vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/category_item_img"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:background="#eeeeee"/>
+
+    <TextView
+        android:id="@+id/category_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/category_item_img"
+        android:layout_marginLeft="13dp"
+        android:text="XXXXXX"
+        android:textSize="17.5dp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/category_item_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/category_item_img"
+        android:layout_below="@+id/category_item_title"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        android:textSize="15dp"
+        android:textColor="#999999" />
+
+    <ImageView
+        android:id="@+id/category_item_auther_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/category_item_img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="13dp"
+        android:src="@mipmap/icon_author"/>
+
+    <TextView
+        android:id="@+id/category_item_auther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/category_item_auther_img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:text="XXXXXX"
+        android:textSize="13dp"
+        android:textColor="#999999" />
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:background="#eeeeee"
+    android:gravity="center_vertical"
+    android:minHeight="59dp"
+    android:paddingLeft="16.5dp"
+    android:paddingRight="16.5dp">
+
+    <TextView
+        android:id="@+id/userinfo_recharge_history_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="XXXXXX"
+        android:textColor="#333333"
+        android:textSize="17.4dp" />
+
+
+    <TextView
+        android:id="@+id/userinfo_recharge_history_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="XXXXXX"
+        android:textColor="#999999"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

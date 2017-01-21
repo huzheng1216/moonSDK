@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/detail_bottom_bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent">
+
+        <Button
+            android:id="@+id/detail_bottom_buy_bt"
+            style="@style/detail_button_bt1"
+            android:text="@string/detail_buy"
+            android:onClick="buy"
+            android:enabled="false"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/detail_bottom_free_bt"
+            style="@style/detail_button_bt2"
+            android:layout_toLeftOf="@+id/detail_bottom_buy_bt"
+            android:drawableTop="@drawable/detail_bottombar_free_selector"
+            android:text="@string/detail_free"
+            android:onClick="free"
+            android:enabled="false"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/detail_bottom_add_bt"
+            style="@style/detail_button_bt2"
+            android:drawableTop="@drawable/detail_bottombar_add_selector"
+            android:layout_toRightOf="@+id/detail_bottom_buy_bt"
+            android:text="@string/detail_add"
+            android:onClick="add"
+            android:enabled="false"
+            >
+        </Button>
+
+    </RelativeLayout>
+
+
+    <com.flyersoft.sdk.widget.detail.DetailHeaderLayout
+        android:id="@+id/detail_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.flyersoft.sdk.widget.detail.DetailHeaderLayout>
+
+    <ScrollView
+        android:id="@+id/detail_main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/detail_header_layout"
+        android:layout_above="@+id/detail_bottom_bt_layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee" >
+
+            <LinearLayout
+                android:id="@+id/detail_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="22dp"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16.5dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/detail_content_imag"
+                        android:layout_width="100dp"
+                        android:layout_height="133dp"
+                        android:src="@mipmap/logo_login"
+                        android:background="#aaaaaa"/>
+
+                    <TextView
+                        android:id="@+id/detail_content_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.5dp"
+                        android:layout_toRightOf="@+id/detail_content_imag"
+                        android:text="XXXXXXXX"
+                        android:textColor="#333333"
+                        android:textSize="17.5dp"/>
+
+                    <TextView
+                        android:id="@+id/detail_content_auther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.5dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_toRightOf="@+id/detail_content_imag"
+                        android:layout_below="@+id/detail_content_title"
+                        android:text="XXXXXXXX"
+                        android:textColor="#1e88e5"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:id="@+id/detail_content_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.5dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_toRightOf="@+id/detail_content_imag"
+                        android:layout_below="@+id/detail_content_auther"
+                        android:text="XXXXXXXX"
+                        android:textColor="#999999"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:id="@+id/detail_content_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.5dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_toRightOf="@+id/detail_content_imag"
+                        android:layout_below="@+id/detail_content_count"
+                        android:text="XXXXXXXX"
+                        android:textColor="#1e88e5"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/detail_content_dec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="22dp"
+                    android:layout_marginLeft="16.5dp"
+                    android:layout_marginRight="16.5dp"
+                    android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                    android:textColor="#666666"
+                    android:textSize="15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="22dp"
+                    android:background="#e5e5e5"></View>
+
+                <RelativeLayout
+                    android:id="@+id/detail_content_view_catalog_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:paddingLeft="16.5dp"
+                    android:paddingRight="16.5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/detail_content_view_catalog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/detail_view_catalog"
+                        android:textColor="#333333"
+                        android:textSize="17.5dp"/>
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/detail_content_serialize"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="连载至XXXXXXXX"-->
+                        <!--android:layout_toRightOf="@+id/detail_content_view_catalog"-->
+                        <!--android:textColor="#999999"-->
+                        <!--android:textSize="13dp"/>-->
+
+                    <ImageView
+                        android:id="@+id/detail_content_view_more_icon"
+                        android:layout_width="17dp"
+                        android:layout_height="61dp"
+                        android:paddingTop="22dp"
+                        android:paddingBottom="22dp"
+                        android:src="@mipmap/icon_more"
+                        android:layout_alignParentRight="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/detail_content_serialize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="连载至XXXXXXXX"
+                        android:layout_toLeftOf="@+id/detail_content_view_more_icon"
+                        android:textColor="#999999"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/detail_content_layout"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="22dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/main_three_books_item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/detail_read_recommend"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#1e88e5"></View>
+                </LinearLayout>
+
+                <include
+                    layout="@layout/detail_three_books_item"></include>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#e5e5e5"></View>
+
+                <Button
+                    android:id="@+id/detail_recommend_change_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="@string/detail_content_recomment_change"
+                    android:background="#ffffff"
+                    android:textColor="#1e88e5"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.flyersoft.sdk.widget.detail.DetailHeaderLayout
+        android:id="@+id/landing_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.flyersoft.sdk.widget.detail.DetailHeaderLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="16dp"
+            android:src="@mipmap/logo_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="71dp"
+            android:text="@string/landing_name"
+            android:textSize="25dp"
+            android:textColor="#333333"/>
+
+
+        <LinearLayout
+            android:onClick="openZFBLanding"
+            style="@style/landing_button_bt"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/landing_buttom_zfb_selector" >
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:clickable="false"
+                android:background="#0000"
+                android:src="@mipmap/logo_zhifubao"/>
+            <TextView
+                style="@style/landing_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:background="#0000"
+                android:text="@string/landing_zfb" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:onClick="openWXLanding"
+            style="@style/landing_button_bt"
+            android:background="@drawable/landing_buttom_wx_selector" >
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:clickable="false"
+                android:background="#0000"
+                android:src="@mipmap/logo_weixin"/>
+            <TextView
+                style="@style/landing_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:background="#0000"
+                android:text="@string/landing_wx" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

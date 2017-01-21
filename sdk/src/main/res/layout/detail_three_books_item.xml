@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="22dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/detail_three_books_item_1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="28dp"
+        android:layout_weight="1">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/detail_three_books_item_1_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@mipmap/logo_login"
+            android:background="#aaaaaa" />
+        <TextView
+            android:id="@+id/detail_three_books_item_1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:text="XXXXXXXXXXXXXXXXXXXXXX"
+            android:textColor="#333333"
+            android:textSize="17.6dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/detail_three_books_item_1_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="#999999"
+            android:textSize="15dp"
+            android:layout_marginTop="7dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_three_books_item_2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_weight="1">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/detail_three_books_item_2_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@mipmap/logo_login"
+            android:background="#aaaaaa" />
+        <TextView
+            android:id="@+id/detail_three_books_item_2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:text="XXXXXXXXXXXXXXXXXXXXXX"
+            android:textColor="#333333"
+            android:textSize="17.6dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/detail_three_books_item_2_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="#999999"
+            android:textSize="15dp"
+            android:layout_marginTop="7dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/detail_three_books_item_3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:layout_weight="1">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/detail_three_books_item_3_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@mipmap/logo_login"
+            android:background="#aaaaaa" />
+        <TextView
+            android:id="@+id/detail_three_books_item_3_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:text="XXXXXXXXXXXXXXXXXXXXXX"
+            android:textColor="#333333"
+            android:textSize="17.6dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/detail_three_books_item_3_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="#999999"
+            android:textSize="15dp"
+            android:layout_marginTop="7dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

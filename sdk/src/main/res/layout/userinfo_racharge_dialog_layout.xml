@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/bule"
+        android:gravity="center_vertical"
+        android:paddingLeft="27dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/currency_recharge"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/userinfo_recharge_del_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:padding="22dp"
+            android:src="@mipmap/top_del" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/userinfo_recharge_bt">
+        <TextView
+            style="@style/userinfo_recharge_bt_text"
+            android:text="@string/currency_100" />
+        <TextView
+            android:id="@+id/userinfo_recharge_bt1"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/userinfo_recharge_bg"
+            android:gravity="center"
+            android:text="@string/currency_r1"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+    </RelativeLayout>
+    <View style="@style/line_1"></View>
+
+    <RelativeLayout style="@style/userinfo_recharge_bt">
+        <TextView
+            style="@style/userinfo_recharge_bt_text"
+            android:text="@string/currency_1000" />
+        <TextView
+            android:id="@+id/userinfo_recharge_bt2"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/userinfo_recharge_bg"
+            android:gravity="center"
+            android:text="@string/currency_r10"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+    </RelativeLayout>
+    <View style="@style/line_1"></View>
+
+    <RelativeLayout style="@style/userinfo_recharge_bt">
+        <TextView
+            style="@style/userinfo_recharge_bt_text"
+            android:text="@string/currency_2000" />
+        <TextView
+            android:id="@+id/userinfo_recharge_bt3"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/userinfo_recharge_bg"
+            android:gravity="center"
+            android:text="@string/currency_r20"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+    </RelativeLayout>
+    <View style="@style/line_1"></View>
+
+    <RelativeLayout style="@style/userinfo_recharge_bt">
+        <TextView
+            style="@style/userinfo_recharge_bt_text"
+            android:text="@string/currency_5000" />
+        <TextView
+            android:id="@+id/userinfo_recharge_bt4"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/userinfo_recharge_bg"
+            android:gravity="center"
+            android:text="@string/currency_r50"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+    </RelativeLayout>
+    <View style="@style/line_1"></View>
+
+    <RelativeLayout style="@style/userinfo_recharge_bt">
+        <TextView
+            style="@style/userinfo_recharge_bt_text"
+            android:text="@string/currency_10000" />
+        <TextView
+            android:id="@+id/userinfo_recharge_bt5"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/userinfo_recharge_bg"
+            android:gravity="center"
+            android:text="@string/currency_r100"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+    </RelativeLayout>
+    <View style="@style/line_1"></View>
+
+
+</LinearLayout>

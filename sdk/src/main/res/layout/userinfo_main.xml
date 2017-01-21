@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <com.flyersoft.sdk.widget.detail.DetailHeaderLayout
+        android:id="@+id/userinfo_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.flyersoft.sdk.widget.detail.DetailHeaderLayout>
+    
+    <RelativeLayout
+        android:id="@+id/userinfo_balance_layout"
+        style="@style/userinfo_bt"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/userinfo_header_layout">
+        <TextView
+            android:id="@+id/userinfo_balance_tx"
+            style="@style/userinfo_bt_text"
+            android:text="@string/balance" />
+        <TextView
+            android:id="@+id/userinfo_balance_count_tx"
+            android:layout_toRightOf="@+id/userinfo_balance_tx"
+            style="@style/userinfo_bt_text"
+            android:textColor="#1e88e5"
+            android:text="0" />
+        <TextView
+            android:layout_toRightOf="@+id/userinfo_balance_count_tx"
+            style="@style/userinfo_bt_text"
+            android:text="@string/mr_currency" />
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="26dp"
+            android:onClick="recharge"
+            android:text="@string/recharge"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/userinfo_recharge_bg"
+            android:textColor="#ffffff"
+            android:textSize="13dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/userinfo_buys_tx"
+        android:layout_below="@+id/userinfo_balance_layout"
+        style="@style/userinfo_tx"
+        android:text="@string/my_purchase"
+        android:layout_marginTop="9dp"
+        android:onClick="showPurchase" />
+    <View
+        android:id="@+id/userinfo_line"
+        android:layout_below="@+id/userinfo_buys_tx"
+        style="@style/line_1"></View>
+    <TextView
+        android:id="@+id/userinfo_recharge_records_tx"
+        android:layout_below="@+id/userinfo_line"
+        style="@style/userinfo_tx"
+        android:text="@string/my_recharge"
+        android:onClick="showRecharge" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="退出登录"
+        android:onClick="logOut"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

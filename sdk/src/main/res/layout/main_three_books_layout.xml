@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="7.5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="19.5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_three_books_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/read_recommend"
+                android:textColor="#333333"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#1e88e5"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_three_books_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="#1e88e5"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="17.4dp"
+                android:layout_height="17.4dp"
+                android:background="@mipmap/icon_more" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/main_three_books_item_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/main_three_books_item" />
+
+</LinearLayout>

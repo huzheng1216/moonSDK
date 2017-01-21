@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mybuy_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="111dp"
+    android:minHeight="111dp"
+    android:padding="16.5dp"
+    android:gravity="center_vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/mybuy_item_img"
+        android:layout_width="54dp"
+        android:layout_height="73dp"
+        android:background="#eeeeee"/>
+
+    <TextView
+        android:id="@+id/mybuy_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mybuy_item_img"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-2dp"
+        android:text="XXXXXX"
+        android:textSize="17.5dp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/mybuy_item_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mybuy_item_img"
+        android:layout_below="@+id/mybuy_item_title"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:maxLines="1"
+        android:text="XXXXXXXXXXXXXXXX"
+        android:textSize="15dp"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/mybuy_item_auther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mybuy_item_img"
+        android:layout_below="@+id/mybuy_item_doc"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="13dp"
+        android:text="XXXXXX"
+        android:textSize="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#999999" />
+
+
+</RelativeLayout>

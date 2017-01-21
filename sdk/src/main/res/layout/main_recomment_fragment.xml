@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ViewStub
+            android:id="@+id/main_recomment_activitys_layout"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:layout="@layout/main_activity_books_layout"/>
+
+        <include
+            android:id="@+id/main_recomment_item_include1"
+            layout="@layout/main_three_books_layout"></include>
+
+        <include
+            android:id="@+id/main_recomment_item_include2"
+            layout="@layout/main_three_books_layout"></include>
+
+        <include
+            android:id="@+id/main_recomment_item_include3"
+            layout="@layout/main_three_books_layout"></include>
+    </LinearLayout>
+
+
+</ScrollView>

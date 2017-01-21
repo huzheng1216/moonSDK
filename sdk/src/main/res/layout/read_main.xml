@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/read_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/read_content_need_buy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_above="@+id/read_content_price_layout"
+            android:layout_marginBottom="13dp"
+            android:background="#333333"></View>
+
+        <RelativeLayout
+            android:id="@+id/read_content_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/read_content_buy_bt"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/read_content_price_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="13dp">
+
+                <TextView
+                    android:id="@+id/read_content_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buy_books_price"
+                    android:textColor="#333333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/read_content_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/read_content_price1"
+                    android:text="200书币 "
+                    android:textColor="#999999"
+                    android:textSize="15dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/read_content_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/read_content_price2"
+                    android:layout_toRightOf="@+id/read_content_price2"
+                    android:text="0书币"
+                    android:textColor="#1e88e5"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/read_content_price_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/read_content_price_layout1">
+
+                <TextView
+                    android:id="@+id/read_content_balance1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余额："
+                    android:textColor="#333333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/read_content_balance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/read_content_balance1"
+                    android:text="200书币" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/read_content_price_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/read_content_price_layout2"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    style="@style/CustomCheckboxTheme"
+                    android:id="@+id/read_content_checkbox"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+
+                <TextView
+                    android:id="@+id/read_content_checkbox_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/read_content_checkbox"
+                    android:layout_alignBaseline="@+id/read_content_checkbox"
+                    android:text="@string/read_buy_checkbox_tx"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/read_content_buy_bt"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="174dp"
+            android:background="#3399ff"
+            android:text="@string/read_buy_current"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

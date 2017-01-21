@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flyersoft.sdk">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    
+    <application
+        android:name="com.flyersoft.sdk.applocation.MoonReaderApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name="com.flyersoft.sdk.widget.main.MainActivity">
+        </activity>
+        <activity android:name="com.flyersoft.sdk.widget.detail.DetailActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.catalog.CatalogActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.category.CategoryActivity"></activity>
+        <activity
+            android:name="com.flyersoft.sdk.widget.user.landing.LandingPageActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.user.account.UserInfoActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.user.account.RechargeHistoryActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.user.books.UserBooksActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.detail.BuyActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.detail.ReadActivity"></activity>
+        <activity android:name="com.flyersoft.sdk.widget.user.buys.MyBuyBooksActivity"></activity>
+        <activity
+            android:name="com.flyersoft.moonreaderpj.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.flyersoft.moonreaderpj.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>
